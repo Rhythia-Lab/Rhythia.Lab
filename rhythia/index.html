@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/favicon.webp">
+<title>Rhythia.Lab - インストールガイド</title>
+<style>
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体 */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* 共通ヘッダー */
+header {
+    background: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* コンテナ: 2カラム */
+.container {
+    display: flex;
+    width: 78%;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-left: 20%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* メイン記事 */
+main {
+    flex: 1 1 auto;
+    min-width: 0;
+    background: white;
+    padding: 2rem 5rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+}
+
+/* サブタイトル */
+.sub-title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0077cc;
+}
+
+/* 画像 */
+.main-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.main-image1 {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-image2 {
+    max-width: 80%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-image3 {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* インストール手順 */
+.install-title{
+    margin: 5rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+.downloads{
+    margin-top: 4rem ;
+}
+
+.sub-step {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    color: #0077cc;
+}
+
+.note {
+    font-size: 1.1rem;
+    color: #444;
+    background: #f8f8f8;
+    border-left: 4px solid #0077cc;
+    padding: 0.8rem 1rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+}
+
+/* サイドバー（関連記事） */
+aside {
+    width: 40%;
+    background: #fff;
+    padding:0rem 0rem 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-left: auto;
+
+}
+
+/* 強調用クラス */
+.emphasis {
+    font-weight: bold;       
+    color: #0077cc;          
+    letter-spacing: 0.02em;  
+}
+
+/* 見出し */
+h1, h2 {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+h1 {
+    font-size: 2.25rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem; /* 24pxくらい */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    font-size: 1.2rem; /* 16px */
+    margin-bottom: 1rem;
+}
+
+
+aside {
+    font-size: 0.9rem; /* 14pxくらい */
+}
+
+/* リストリンク */
+aside ul {
+    list-style: none;
+}
+aside ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    Rhythia.Lab
+</header>
+
+<div class="container">
+    <!-- メイン記事 -->
+    <main>
+        <h1>インストールガイド</h1>
+        
+        <h2 class="sub-title">まずRhythia(リシア)とは？</h2>
+        <img src="img/rhythia.png" alt="Rhythia紹介画像" class="main-image">
+
+        <p>
+            <span class="emphasis">Rhythia</span>は、音楽に合わせて画面上に飛んでくるノーツにマウスカーソルを合わせることでスコアを競う、エイム型のリズムゲームです。
+        </p>
+        <p>
+            3×3のグリッドシステムに沿ってノーツが飛来し、プレイヤーはそのタイミングに合わせてマウスを動かし、ノーツに重ねることで判定を得ます。ノーツの位置やタイミングに正確に合わせることで、コンボやスコアを伸ばすことができます。
+        </p>
+
+        <h2 class="install-title">インストール手順</h2>
+
+        <p>
+            まず、以下のリンクからRhythiaのインストーラーを入手してください：<br>
+            <a href="https://www.rhythia.com/downloads" target="_blank">https://www.rhythia.com/downloads</a>
+        </p>
+
+        <img src="img/install.jpeg" alt="Rhythiaダウンロードバナー" class="main-image1">
+
+        <p>
+            画像の左側が <span class="emphasis">Online版</span>、右側が <span class="emphasis">Offline版</span> です。<br>
+            Online版ではランキング要素が有効でスコアやRPを記録できます。基本的にはOnline版をダウンロードしておけば問題ありません。
+        </p>    
+        
+        <p class="downloads">
+            ダウンロードしたファイルを解凍して、<span class="emphasis">.exeファイル</span> をクリックして実行します。
+            ⚠ 数回起動しては落ちる場合があります。その場合は再度実行してください。
+        </p>
+       
+        <img src="img/explorer.png" alt="ダウンロードしたファイルの場所（クリック位置にマークあり）" class="main-image1">
+
+        <h3 class="sub-step">Discord連携</h3>
+
+        <p>
+            初回起動時に <strong>Discordとの連携が求められます</strong>。画面の指示に従って連携を行ってください。
+        </p>
+        <img src="img/boot.png" alt="起動画面の初回" class="main-image2">
+
+        <p>
+            <strong>Discord連携が完了すると</strong>、Rhythiaゲーム内の右下にプレイヤー名が表示されます。
+        </p>
+
+        <h3 class="sub-step">譜面の入れ方について</h3>
+
+        <p>
+            譜面の追加方法はいくつかありますが、ここでは最も簡単な方法を紹介します。
+        </p>
+
+        <p class="note">
+            ※補足：画面左の「Language」アイコンから、日本語に変更することができます。
+        </p>
+
+        <img src="img/map.copy.png" alt="譜面の入れ方について" class="main-image3">
+
+        <p>
+            画像にある <span class="emphasis">オンライン</span> のチェックボックスにチェックを入れると、
+            譜面一覧が表示されます。ダウンロードしたい譜面をクリックすると、譜面をダウンロードできます。
+        </p>
+
+
+        <h3 class="sub-step">最後に</h3>
+        <p>
+            今回はRhythiaのインストール手順と譜面の入れ方について説明しました。<br>
+            次回は「設定」について詳しく解説します。
+        </p>
+
+    </main>
+
+    <!-- サイドバー -->
+    <aside>
+        <h2>関連記事</h2>
+        <ul>
+            <li><a href="#">ーーーーーーーー</a></li>
+            <li><a href="#">ーーーーーーーー</a></li>
+            <li><a href="#">ーーーーーーーー</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    &copy; 2025 Rhythia.Lab
+</footer>
+
+</body>
+</html>

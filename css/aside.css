@@ -1,0 +1,77 @@
+/* サイドバー（関連記事） */
+aside {
+    width: 70%;
+    background: #fff;
+    padding:0rem 0rem 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-left: auto;
+
+}
+
+/* リストリンク */
+aside ul {
+    list-style: none;
+}
+aside ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* 関連記事セクション */
+.related-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.related-list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    /* padding: 0.6rem; */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.related-list li a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* サムネイル画像 */
+.related-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* タイトルと説明 */
+.related-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-title {
+    font-weight: bold;
+    color: #0077cc;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.related-desc {
+    font-size: 0.85rem;
+    color: #555;
+}

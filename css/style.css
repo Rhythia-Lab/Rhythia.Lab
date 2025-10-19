@@ -189,7 +189,6 @@ footer {
 }
 
 /* レスポンシブ */
-
 @media (max-width: 1024px) {
     main{
         width: 100%;
@@ -206,3 +205,4 @@ footer {
         margin-left: 0;
     }
 }
+

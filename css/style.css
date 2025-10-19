@@ -29,18 +29,18 @@ header {
 /* コンテナ: 2カラム */
 .container {
     display: flex;
-    width: 78%;
-    margin: 2rem auto;
+    width: 90%; 
+    margin: 2rem 0 2rem auto;
     gap: 2rem;
-    padding: 0 1rem;
-    margin-left: 20%;
+    padding-left: 10vw;  /*PCのみ左を開ける*/
+    padding-right: 2vw; 
     align-items: flex-start;
     justify-content: space-between;
 }
 
 /* メイン記事 */
 main {
-    flex: 1 1 auto;
+    flex: 2;
     min-width: 0;
     background: white;
     padding: 2rem 5rem 2rem 2rem;
@@ -143,9 +143,38 @@ p {
     margin-bottom: 1rem;
 }
 
+a {
+    word-break: break-all; 
+    word-wrap: break-word; 
+}
+
 
 aside {
     font-size: 0.9rem; /* 14pxくらい */
+}
+
+
+/* サイドバー（関連記事） */
+aside {
+    width: 1;
+    background: #fff;
+    padding:0rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-left: auto;
+
+}
+
+/* リストリンク */
+aside ul {
+    list-style: none;
+}
+aside ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+aside ul li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -160,11 +189,17 @@ footer {
 }
 
 /* レスポンシブ */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+    main{
+        width: 100%;
+        padding: 2rem 2rem 2rem 2rem;
+    }
     .container {
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
+        padding-left: 2vw;  /*スマホやタブレットは左右を均等に*/
     }
     aside {
         width: 100%;
